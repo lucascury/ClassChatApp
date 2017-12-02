@@ -11,6 +11,13 @@ import FirebaseDatabase
 
 class ChannelListTableViewController: UITableViewController {
     var database: DatabaseReference!
+    var handle: UInt?
+    
+    deinit {
+        if let handle = handle {
+            database.removeObserver(withHandle: handle)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +26,9 @@ class ChannelListTableViewController: UITableViewController {
     
     func configureFirebase() {
         database = Database.database().reference()
-        
-        //database.child("channels").setValue(["name": "ios dev"])
+        handle = database.child("channels").observe(.value) { snapshot in
+            
+        }
     }
 
     
