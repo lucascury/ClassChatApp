@@ -12,6 +12,7 @@ import FirebaseDatabase
 class ChannelListTableViewController: UITableViewController {
     var database: DatabaseReference!
     var handle: UInt?
+    var channels: [Channel] = []
     
     deinit {
         if let handle = handle {
@@ -26,11 +27,15 @@ class ChannelListTableViewController: UITableViewController {
     
     func configureFirebase() {
         database = Database.database().reference()
-        handle = database.child("channels").observe(.value) { snapshot in
-            
+        handle = database.child("channels").observe(.value) { [unowned self] snapshot in
+            if let data = snapshot.value as? [String:[String:String]] {
+                self.channels = Channel.parseFirebase(data: data)
+            } else {
+                self.channels = Channel.parseFirebase(data: [:])
+            }
+            self.tableView.reloadData()
         }
     }
-
     
     @IBAction func onChannelAdd(_ sender: Any) {
         let controller = UIAlertController(title: "Add Channel", message: nil, preferredStyle: .alert)
@@ -57,19 +62,12 @@ class ChannelListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return channels.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel!.text = channels[indexPath.row].name
         return cell
     }
-    */
-
-
 }
