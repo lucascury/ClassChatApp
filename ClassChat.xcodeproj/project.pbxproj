@@ -10,6 +10,7 @@
 		3504AA601FD309A400734081 /* ChannelListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504AA5F1FD309A400734081 /* ChannelListTableViewController.swift */; };
 		3504AA621FD3113100734081 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504AA611FD3113100734081 /* Channel.swift */; };
 		3504AA641FD319B900734081 /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504AA631FD319B900734081 /* ChannelTableViewController.swift */; };
+		3504AA661FD31E6A00734081 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504AA651FD31E6A00734081 /* Message.swift */; };
 		353AE7861FD3032F00FA56E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353AE7851FD3032F00FA56E0 /* GoogleService-Info.plist */; };
 		354EA4271FD2FD9700BEA4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EA4261FD2FD9700BEA4C3 /* AppDelegate.swift */; };
 		354EA42C1FD2FD9700BEA4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354EA42A1FD2FD9700BEA4C3 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		3504AA5F1FD309A400734081 /* ChannelListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListTableViewController.swift; sourceTree = "<group>"; };
 		3504AA611FD3113100734081 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		3504AA631FD319B900734081 /* ChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		3504AA651FD31E6A00734081 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		353AE7851FD3032F00FA56E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		354EA4231FD2FD9700BEA4C3 /* ClassChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		354EA4261FD2FD9700BEA4C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3504AA5F1FD309A400734081 /* ChannelListTableViewController.swift */,
 				3504AA611FD3113100734081 /* Channel.swift */,
 				3504AA631FD319B900734081 /* ChannelTableViewController.swift */,
+				3504AA651FD31E6A00734081 /* Message.swift */,
 			);
 			path = ClassChat;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				354EA4271FD2FD9700BEA4C3 /* AppDelegate.swift in Sources */,
 				3504AA621FD3113100734081 /* Channel.swift in Sources */,
+				3504AA661FD31E6A00734081 /* Message.swift in Sources */,
 				3504AA641FD319B900734081 /* ChannelTableViewController.swift in Sources */,
 				3504AA601FD309A400734081 /* ChannelListTableViewController.swift in Sources */,
 			);
