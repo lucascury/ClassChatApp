@@ -70,4 +70,9 @@ class ChannelListTableViewController: UITableViewController {
         cell.textLabel!.text = channels[indexPath.row].name
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let channelController = segue.destination as! ChannelTableViewController
+        channelController.channel = channels[tableView.indexPathForSelectedRow!.row]
+    }
 }
