@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353AE7861FD3032F00FA56E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353AE7851FD3032F00FA56E0 /* GoogleService-Info.plist */; };
 		354EA4271FD2FD9700BEA4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EA4261FD2FD9700BEA4C3 /* AppDelegate.swift */; };
 		354EA4291FD2FD9700BEA4C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EA4281FD2FD9700BEA4C3 /* ViewController.swift */; };
 		354EA42C1FD2FD9700BEA4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354EA42A1FD2FD9700BEA4C3 /* Main.storyboard */; };
 		354EA42E1FD2FD9700BEA4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354EA42D1FD2FD9700BEA4C3 /* Assets.xcassets */; };
 		354EA4311FD2FD9700BEA4C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354EA42F1FD2FD9700BEA4C3 /* LaunchScreen.storyboard */; };
+		BDBD6CFC313FE156C588CC76 /* Pods_ClassChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A42E0AF5A13E0F668F97119 /* Pods_ClassChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1298EA3A3D637CA3CCE513C3 /* Pods-ClassChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassChat/Pods-ClassChat.debug.xcconfig"; sourceTree = "<group>"; };
+		1A42E0AF5A13E0F668F97119 /* Pods_ClassChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		353AE7851FD3032F00FA56E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		354EA4231FD2FD9700BEA4C3 /* ClassChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		354EA4261FD2FD9700BEA4C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		354EA4281FD2FD9700BEA4C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		354EA42D1FD2FD9700BEA4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354EA4301FD2FD9700BEA4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		354EA4321FD2FD9700BEA4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BA7279ED17C4C9F581EBD1 /* Pods-ClassChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassChat/Pods-ClassChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBD6CFC313FE156C588CC76 /* Pods_ClassChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				354EA4251FD2FD9700BEA4C3 /* ClassChat */,
 				354EA4241FD2FD9700BEA4C3 /* Products */,
+				45A25EAEB166911D2FB460BB /* Pods */,
+				9683A15293D56ED9655E33FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		354EA4251FD2FD9700BEA4C3 /* ClassChat */ = {
 			isa = PBXGroup;
 			children = (
+				353AE7851FD3032F00FA56E0 /* GoogleService-Info.plist */,
 				354EA4261FD2FD9700BEA4C3 /* AppDelegate.swift */,
 				354EA4281FD2FD9700BEA4C3 /* ViewController.swift */,
 				354EA42A1FD2FD9700BEA4C3 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = ClassChat;
 			sourceTree = "<group>";
 		};
+		45A25EAEB166911D2FB460BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1298EA3A3D637CA3CCE513C3 /* Pods-ClassChat.debug.xcconfig */,
+				36BA7279ED17C4C9F581EBD1 /* Pods-ClassChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9683A15293D56ED9655E33FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A42E0AF5A13E0F668F97119 /* Pods_ClassChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 354EA4351FD2FD9700BEA4C3 /* Build configuration list for PBXNativeTarget "ClassChat" */;
 			buildPhases = (
+				A7C9893AA2BDCF70C9677B06 /* [CP] Check Pods Manifest.lock */,
 				354EA41F1FD2FD9700BEA4C3 /* Sources */,
 				354EA4201FD2FD9700BEA4C3 /* Frameworks */,
 				354EA4211FD2FD9700BEA4C3 /* Resources */,
+				BEABC017602E195A2446846C /* [CP] Embed Pods Frameworks */,
+				5F8C4315EE029863CAC8CF65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				354EA4311FD2FD9700BEA4C3 /* LaunchScreen.storyboard in Resources */,
+				353AE7861FD3032F00FA56E0 /* GoogleService-Info.plist in Resources */,
 				354EA42E1FD2FD9700BEA4C3 /* Assets.xcassets in Resources */,
 				354EA42C1FD2FD9700BEA4C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F8C4315EE029863CAC8CF65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassChat/Pods-ClassChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C9893AA2BDCF70C9677B06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClassChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEABC017602E195A2446846C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClassChat/Pods-ClassChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassChat/Pods-ClassChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		354EA41F1FD2FD9700BEA4C3 /* Sources */ = {
@@ -211,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,6 +359,7 @@
 		};
 		354EA4361FD2FD9700BEA4C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1298EA3A3D637CA3CCE513C3 /* Pods-ClassChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		354EA4371FD2FD9700BEA4C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BA7279ED17C4C9F581EBD1 /* Pods-ClassChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
