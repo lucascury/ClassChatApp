@@ -7,5 +7,6 @@ target 'ClassChat' do
 
   # Pods for ClassChat
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end
