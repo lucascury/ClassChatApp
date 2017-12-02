@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ChannelListTableViewController: UITableViewController {
-
+    var database: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureFirebase()
+    }
+    
+    func configureFirebase() {
+        database = Database.database().reference()
+        
+        //database.child("channels").setValue(["name": "ios dev"])
     }
 
     
@@ -34,7 +43,7 @@ class ChannelListTableViewController: UITableViewController {
     }
     
     func addChannel(name: String) {
-        
+        database.child("channels").childByAutoId().setValue(["name": name])
     }
     
     // MARK: - Table view data source
